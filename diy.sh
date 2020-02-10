@@ -7,6 +7,7 @@
 #=================================================
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+wget -O package/network/services/dnsmasq/files/dhcp.conf https://raw.githubusercontent.com/chenxiccc/Customfiles/master/dhcp
 sed -i 's/192.168.1.1/192.168.31.200/g' package/base-files/files/bin/config_generate
 sed -i '1i\127.0.0.1 api.ad.xiaomi.com' package/base-files/files/etc/hosts
 sed -i '1i\127.0.0.1 sdkconfig.ad.xiaomi.com' package/base-files/files/etc/hosts
